@@ -1,0 +1,54 @@
+/* Double Page Doll CSS for Lioden
+   Upload this file somewhere public (for example GitHub Pages),
+   then link it AFTER your main layout CSS.
+*/
+
+/* ===== EASY SETTINGS ===== */
+:root {
+    --left-doll-width: 250px;
+    --right-doll-width: 250px;
+
+    --left-doll-left: 0px;
+    --left-doll-bottom: 0px;
+
+    --right-doll-right: 0px;
+    --right-doll-bottom: 0px;
+}
+
+/* ===== LEFT PAGE DOLL ===== */
+.page-doll-left {
+    position: fixed !important;
+    left: var(--left-doll-left) !important;
+    right: auto !important;
+    bottom: var(--left-doll-bottom) !important;
+
+    width: var(--left-doll-width) !important;
+    height: auto !important;
+
+    max-width: none !important;
+    z-index: 9999 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    pointer-events: none;
+}
+
+/* ===== RIGHT PAGE DOLL ===== */
+.page-doll-right {
+    position: fixed !important;
+    right: var(--right-doll-right) !important;
+    left: auto !important;
+    bottom: var(--right-doll-bottom) !important;
+
+    width: var(--right-doll-width) !important;
+    height: auto !important;
+
+    max-width: none !important;
+    z-index: 9999 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    pointer-events: none;
+}
